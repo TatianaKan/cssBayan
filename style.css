@@ -8,3 +8,52 @@
   margin: auto;
   background-color: #F5F5EB;
 }
+
+.accord-list {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.accord-title {
+  font-size: 42px;
+  font-family: Arial, serif;
+  font-weight: 700;
+}
+
+.accord-item {
+  padding: 20px;
+  border: 2px solid #fff;
+}
+
+.item {
+  width: 0;
+  height: 0;
+  appearance: none;
+  position: absolute;
+  
+}
+
+.item:checked ~ .item-block {
+  display: block;
+}
+
+.item-title {
+  display: block;
+  cursor: pointer;
+  padding: 20px;
+  transition: all .5s ease-in-out;
+}
+
+.item-title:hover {
+  background-color: #a65d5d;
+}
+
+.item-block {
+  display: none;
+}
+
+.item-img {
+  width: 50%;
+  display: block;
+  margin: 20px auto;
+}
