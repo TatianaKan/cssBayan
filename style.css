@@ -4,15 +4,14 @@
 
 html {
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 22px;
   font-weight: 700;
   margin-right: calc(-1 * (100vw - 100%));
 }
 
 .container {
-  max-width: 920px;
+  max-width: 57.5rem;
   height: 100%;
-  margin: 100px auto;
+  margin: 6.25rem auto;
   background-color: #F5F5EB;
 }
 
@@ -20,6 +19,7 @@ html {
   width: 90%;
   margin: 0 auto;
   position: static;
+  padding-top: 2rem;
 }
 
 .accord-list:hover {
@@ -27,13 +27,13 @@ html {
 }
 
 .accord-title {
-  font-size: 42px;
+  font-size: 2.6rem;
   font-family: Arial, serif;
   font-weight: 700;
 }
 
 .accord-item {
-  border-top: 2px solid #d1cdcd;
+  border-top: 0.15rem solid #d1cdcd;
 }
 
 .item {
@@ -47,7 +47,6 @@ html {
   display: block;
 }
 
-
 .item:checked~.item-title {
   color: #2d19c5;
 }
@@ -60,7 +59,7 @@ html {
 .item:checked~.item-title::before {
   content: "-";
   font-weight: 900;
-  font-size: 50px;
+  font-size: 3.125rem;
 
   position: absolute;
   top: 50%;
@@ -76,15 +75,16 @@ html {
 .item-title {
   display: block;
   cursor: pointer;
-  padding: 20px;
+  padding: 1.25rem;
   transition: all .3s ease-in-out;
   position: relative;
+  font-size: 2rem;
 }
 
 .item-title::before {
   content: "\2b";
   font-weight: 900;
-  font-size: 40px;
+  font-size: 2.5rem;
   font-family: "Font Awesome Kit";
   position: absolute;
   top: 50%;
@@ -99,12 +99,11 @@ html {
 
 .item-block {
   display: none;
-  padding-bottom: 20px;
-  transition: all 15s ease-in-out;
+  padding-bottom: 1.25rem;
 }
 
 .item-img {
   width: 50%;
   display: block;
-  margin: 20px auto;
+  margin: 1.25rem auto;
 }
