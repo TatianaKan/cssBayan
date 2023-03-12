@@ -2,16 +2,27 @@
   box-sizing: border-box;
 }
 
+html {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 22px;
+  font-weight: 700;
+  margin-right: calc(-1 * (100vw - 100%));
+}
+
 .container {
   max-width: 920px;
-  height: calc(100vh - 100px);
-  margin: auto;
+  height: 100%;
+  margin: 100px auto;
   background-color: #F5F5EB;
 }
 
 .accord-list {
   width: 90%;
   margin: 0 auto;
+}
+
+.accord-list:hover {
+  cursor: pointer;
 }
 
 .accord-title {
@@ -21,35 +32,44 @@
 }
 
 .accord-item {
-  padding: 20px;
-  border: 2px solid #fff;
+  border-top: 2px solid #d1cdcd;
 }
 
 .item {
   width: 0;
   height: 0;
   appearance: none;
-  position: absolute;
-  
 }
 
-.item:checked ~ .item-block {
+
+
+.item:checked~.item-block {
   display: block;
+  transition: all 15s ease-in-out;
+}
+
+.item:checked~.item-title {
+  color: #2d19c5;
+}
+
+.item:hover~.item-block {
+  display: block;
+}
+
+.item:hover~.item-title {
+  color: #2d19c5;
 }
 
 .item-title {
   display: block;
   cursor: pointer;
   padding: 20px;
-  transition: all .5s ease-in-out;
-}
-
-.item-title:hover {
-  background-color: #a65d5d;
+  transition: all .3s ease-in-out;
 }
 
 .item-block {
   display: none;
+  padding-bottom: 20px;
 }
 
 .item-img {
