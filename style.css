@@ -40,7 +40,6 @@ html {
   height: 0;
   width: 0;
   appearance: none;
-
 }
 
 .item:checked~.item-block {
@@ -49,10 +48,6 @@ html {
 
 .item:checked~.item-title {
   color: #2d19c5;
-}
-
-.item:hover~.item-block {
-  display: block;
 }
 
 .item:hover~.item-title::before,
@@ -106,4 +101,56 @@ html {
   width: 50%;
   display: block;
   margin: 1.25rem auto;
+}
+
+/*media*/
+
+@media (min-width: 120rem) {
+  .item:hover~.item-block {
+    display: block;
+  }
+}
+
+@media (max-width: 51.25rem ) {
+  .accord-list {
+    padding-top: 1rem;
+  }
+  .accord-title {
+    font-size: 1.5rem;
+  }
+
+  .item-title {
+    font-size: 1.3rem;
+    padding: 0.7rem;
+  }
+
+  .item-block {
+    padding-bottom: 0.7rem;
+  }
+
+  .item-img {
+    margin: 0.5rem auto;
+  }
+}
+
+@media (max-width: 20rem) {
+  .accord-list {
+    padding-top: 0.7rem;
+  }
+  .accord-title {
+    font-size: 1rem;
+  }
+
+  .item-title {
+    font-size: 1rem;
+    padding: 0.5rem;
+  }
+
+  .item-block {
+    padding-bottom: 0.5rem;
+  }
+
+  .item-img {
+    margin: 0.5rem auto;
+  }
 }
